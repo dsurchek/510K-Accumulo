@@ -6,7 +6,7 @@ GSON is used to marshal JSON to Java, however it also uses streaming and threads
 
 This is a maven project and can also be run using maven using the standard Accumulo command line arguments.
 
- s  mvn exec:java -Dexec.mainClass="fda.Controller" -Dexec.args="-u root -p <password> -i <instance name> -z localhost:2181"
+   mvn exec:java -Dexec.mainClass="fda.Controller" -Dexec.args="-u root -p <password> -i <instance name> -z <zookeepers>"
  
 This will create a table in Accumulo named 510k.  If the table is present it will be dropped and re-created.  The table has the following schema
    <K Number> "record":<field name> <current time> <field value>
